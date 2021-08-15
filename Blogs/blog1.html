@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execution Context In Javascript</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav class="navigation">
+        <div class="container">
+            <div class="brandName">Raghav Heda</div>
+            <ul class="un-bulleted-list inline-lists">
+                <li>
+                    <a class="links" href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a class="links" href="../pages/projects.html">Projects</a>
+                </li>
+                <li>
+                    <a class="links active" href="../pages/blogs.html">Blogs</a>
+                </li>
+            </ul>
+        </div>
+    </nav>    
+    <section class="content-holder">
+        <div class=" container-blogpage">
+            <h1>Execution Context In Javascript</h1>
+            <img style="width:60%;margin-left: 7%;height:20%;padding-bottom: 2%;" src="../images/execution_context.png">
+            <p>In this blog we will learn how Javascript works. Do you know what is <b>Execution Context</b>? </p>
+            <p>Execution Context is</p>
+            <ul>
+                <li>It is a concept that hold info about the environment within which current code is being executed.</li>
+                <li>Imagine it as a closed container inside which Javascript runs</li>
+                <li>Execution Context is a place where all the things happening in Javascript takes place.</li>
+            </ul>
+            <p>The container is divided into 2 components. The first component is <b>Memory Component</b> and the second component is <b>Code Component.</b>
+            The memory component stores all the variables and  function. All the values are stored in the form of key value pair. It is also called as Variable Environment. The code component is the space where code is executed line by line. It is also called as Thread Of Execution.</p>
+            <p>There Are Three Types Of Execution Context:</p>
+            <ul>
+                <li>Global Execution Context</li>
+                <li>Functional Execution Context</li>
+                <li>Eval Function Execution Context </li>
+            </ul>
+            <p>All the execution stack that are created during the code execution are stored in a <b>Execution Stack</b> also called as "Calling Stack". The stack uses LIFO structure for the execution. In Javascript engine creates a global execution context and pushes variables and function on the top of the stack.
+            The engine then start execution from the top of the stack, once the execution is complete it pops it from the stack and control is passed to next context.</p>
+            <h3>So this was some basic about Execution Context and how Javascript works.</h3>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <section class="section">
+            <h2 class="heading">Connect me on</h2>
+            <ul class="un-bulleted-list inline-lists ">
+                <li>
+                    <a class="links social-icons" href="https://github.com/raghav2110">
+                        <img src="../images/icons/github.svg" alt="github">
+                    </a> 
+                </li>
+                <li>
+                    <a class="links social-icons" href="https://www.linkedin.com/in/raghav-heda-96a981167/">
+                        <img src="../images/icons/linkedin.svg" alt="linkedin">
+                    </a> 
+                </li>
+                <li>
+                    <a class="links social-icons" href="https://twitter.com/raghav_heda">
+                        <img src="../images/icons/twitter.svg" alt="twitter">
+                    </a> 
+                </li>
+                <li>
+                    <a class="links social-icons" href="https://www.instagram.com/raghav_heda21">
+                        <img src="../images/icons/instagram.svg" alt="instagram">
+                    </a> 
+                </li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
